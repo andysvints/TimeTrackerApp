@@ -1,4 +1,7 @@
 function Start-TimeTracker {
+<#
+
+#>
     [CmdletBinding(SupportsShouldProcess=$true, 
     ConfirmImpact='Medium')]
     param (
@@ -47,6 +50,9 @@ function Start-TimeTracker {
 }
 
 function Stop-TimeTracker {
+<#
+    
+#>
     [CmdletBinding(SupportsShouldProcess=$true, 
     ConfirmImpact='Medium')]
     param (
@@ -97,6 +103,9 @@ function Stop-TimeTracker {
 }
 
 function Invoke-TimeTracker {
+<#
+    
+#>
     [CmdletBinding(SupportsShouldProcess=$true, 
     ConfirmImpact='Medium')]
     param ()
@@ -265,6 +274,9 @@ function Invoke-TimeTracker {
 }
 
 function Get-TimeTracker {
+<#
+    
+#>
     [CmdletBinding(SupportsShouldProcess=$true, 
     ConfirmImpact='Medium')]
     param (
@@ -292,6 +304,9 @@ function Get-TimeTracker {
     }
 }
 function Get-ConfigFile {
+<#
+    
+#>
     [CmdletBinding(SupportsShouldProcess=$true, 
     ConfirmImpact='Medium')]
     param (
@@ -328,6 +343,9 @@ function Get-ConfigFile {
     }
 }
 function New-DefaultConfigFile {
+<#
+    
+#>
     [CmdletBinding(SupportsShouldProcess=$true, 
     ConfirmImpact='Medium')]
     param (
@@ -343,6 +361,7 @@ function New-DefaultConfigFile {
             Write-Verbose "Creating Default Config File"
             $Config=@{
                 "CircularLogging" = $true
+                "LoggingLevel"="None"
                 "TimeIncrementMins" = 30
                 "OutputFolder"= $($env:USERPROFILE)
                 "OutputFormat"= "CSV"
