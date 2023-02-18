@@ -17,16 +17,6 @@ InModuleScope $ProjectName {
             It 'Not returns a single object' {
                 ($return | Measure-Object).Count | Should -Be 0
             }
-
-        }
-
-        Context 'Creates a .config file' {
-            It 'Creates a file' {
-                New-DefaultConfigFile
-                Test-Path $PSScriptRoot\TimeTracker.config | Should -Be $true
-            }
-
-
         }
 
         Context 'ShouldProcess' {

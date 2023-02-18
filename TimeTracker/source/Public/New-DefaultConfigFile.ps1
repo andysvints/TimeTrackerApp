@@ -16,14 +16,9 @@ function New-DefaultConfigFile
       }
 
       .EXAMPLE
-      Start-TimeTracker -Comment "Reading & replying to emails"
-
-      .PARAMETER Comment
-      Description of the activity that you are treacking time for.
-
-      .PARAMETER Technician
-      Name of the Technician the is performing the activity. Is optional as it can be configured in config file.
-
+      New-DefaultConfigFile -Verbose
+      VERBOSE: Performing the operation "Create New Config File" on target "DefaultConfig".
+      VERBOSE: Creating Default Config File
 
     #>
         [CmdletBinding(SupportsShouldProcess=$true,
@@ -47,7 +42,7 @@ function New-DefaultConfigFile
                     "OutputFormat"= "CSV"
                     "Technician"= ""
                 }
-
+                Write-Verbose "Config File Location: $PSScriptRoot\TimeTracker.config"
                 $Config |ConvertTo-Json| Out-File $PSScriptRoot\TimeTracker.config
 
             }
