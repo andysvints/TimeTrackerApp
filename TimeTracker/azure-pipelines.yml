@@ -74,7 +74,7 @@ stages:
             displayName: 'Run Tests'
             inputs:
               filePath: './build.ps1'
-              arguments: '-tasks test'
+              arguments: '-tasks test -CodeCoverageThreshold 51' 
 
           - task: PublishTestResults@2
             displayName: 'Publish Test Results'
