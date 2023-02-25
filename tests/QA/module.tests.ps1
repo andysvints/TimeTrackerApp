@@ -70,7 +70,7 @@ Describe 'Changelog Management' -Tag 'Changelog' {
         # Only check if there are any changed files.
         if ($filesChanged)
         {
-            $filesChanged | Should -Contain 'CHANGELOG.md' -Because 'the CHANGELOG.md must be updated with at least one entry in the Unreleased section for each PR'
+            $filesChanged | Should -Contain "$ProjectName/CHANGELOG.md" -Because 'the CHANGELOG.md must be updated with at least one entry in the Unreleased section for each PR'
         }
     }
 
