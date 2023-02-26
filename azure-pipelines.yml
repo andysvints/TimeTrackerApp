@@ -111,7 +111,7 @@ stages:
             displayName: 'Run Tests'
             inputs:
               filePath: './build.ps1'
-              arguments: '-tasks test'
+              arguments: '-tasks test -CodeCoverageThreshold 51'
               pwsh: true
 
           - task: PublishTestResults@2
@@ -147,7 +147,7 @@ stages:
             displayName: 'Run Tests'
             inputs:
               filePath: './build.ps1'
-              arguments: '-tasks test'
+              arguments: '-tasks test -CodeCoverageThreshold 51'
               pwsh: false
 
           - task: PublishTestResults@2
@@ -183,7 +183,7 @@ stages:
             displayName: 'Run Tests'
             inputs:
               filePath: './build.ps1'
-              arguments: '-tasks test'
+              arguments: '-tasks test -CodeCoverageThreshold 51'
               pwsh: true
 
           - task: PublishTestResults@2
