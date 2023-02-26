@@ -1,4 +1,5 @@
-function Stop-TimeTracker {
+function Stop-TimeTracker
+{
      <#
       .SYNOPSIS
       Stop TimeTracking instance
@@ -41,12 +42,13 @@ function Stop-TimeTracker {
                 Write-Verbose "Stopping new TimeTracker Instance."
                 $Config=Get-ConfigFile
                 Write-Verbose "Checking if $($Config.OutputFolder)\TimeTracker\$($Guid).track exists."
-                if((Test-Path -Path "$($Config.OutputFolder)\TimeTracker\$($Guid).track" -PathType Leaf)){
+                if((Test-Path -Path "$($Config.OutputFolder)\TimeTracker\$($Guid).track" -PathType Leaf))
+                {
                     Write-Verbose "Id: $Guid exists"
                     $TrackingFile=Get-Content "$($Config.OutputFolder)\TimeTracker\$($Guid).track" | ConvertFrom-Json
                     $TrackingFile | Add-Member -NotePropertyName "EndTime"  -NotePropertyValue $EndDate
                     $TimeElapsed=$($EndDate-$($TrackingFile.StartTime))
-                    $MinutesSpent=$TimeElapsed.TotalMinutes -lt $Config.TimeIncrementMins ? $Config.TimeIncrementMins : $TimeElapsed.TotalMinutes
+                    $MinutesSpent=if($TimeElapsed.TotalMinutes -lt $Config.TimeIncrementMins) {$Config.TimeIncrementMins} else { $TimeElapsed.TotalMinutes}
                     $TrackingFile | Add-Member -NotePropertyName "MinutesElapsed" -NotePropertyValue $MinutesSpent
                     $TrackingFile | Select-Object Id,StartTime,EndTime,MinutesElapsed,Comment,Technician | Export-csv -Path "$($Config.OutputFolder)\TimeTracker\TimeTrackingReport.csv" -NoTypeInformation -Append
                     Remove-item "$($Config.OutputFolder)\TimeTracker\$($Guid).track"

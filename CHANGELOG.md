@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Unit Tests
 - New features.
 - Unit Tests for PowerShell Core
+- Update Stop-TimeTracker function
 
 ### Changed
 
