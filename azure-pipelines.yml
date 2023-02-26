@@ -5,6 +5,7 @@ trigger:
   paths:
     exclude:
     - CHANGELOG.md
+    - azure-pipelines.yml
   tags:
     include:
     - "v*"
