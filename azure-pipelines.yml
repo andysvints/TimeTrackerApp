@@ -13,7 +13,7 @@ trigger:
     - "*-*"
 
 variables:
-  Agent.Source.Git.ShallowFetchDepth: 1
+  Agent.Source.Git.ShallowFetchDepth: 100
   buildFolderName: output
   buildArtifactName: output
   testResultFolderName: testResults
