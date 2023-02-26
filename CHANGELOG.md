@@ -7,17 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Unit tests
 - Build pipeline
+- Unit Tests for PowerShell Core
+- Update Stop-TimeTracker function
 
 ### Added
 
 - Unit Tests
 - New features.
 - Unit Tests for PowerShell Core
-- Update Stop-TimeTracker function
 
 ### Changed
 
-- For changes in existing functionality.
+- Update Stop-TimeTracker function
 
 ### Deprecated
 
