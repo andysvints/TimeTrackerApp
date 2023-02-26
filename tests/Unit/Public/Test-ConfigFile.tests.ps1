@@ -8,12 +8,12 @@ Import-Module $ProjectName
 
 InModuleScope $ProjectName {
     Describe Test-ConfigFile {
-        
+
 
         Context 'Return values' {
-            
+
             BeforeEach {
-                $ConfigFile="{`"CircularLogging`" : true,`"LoggingLevel`":`"None`",`"TimeIncrementMins`" : 30,`"OutputFolder`": `"C:\\users`",`"OutputFormat`": `"CSV`",`"Technician`": `" `"}"
+                $ConfigFile="{`"CircularLogging`" : true,`"LoggingLevel`":`"None`",`"TimeIncrementMins`" : 30,`"OutputFolder`": `"$($home.replace('\',"\\"))`",`"OutputFormat`": `"CSV`",`"Technician`": `" `"}"
                 $return = Test-ConfigFile -ConfigObj $($ConfigFile | ConvertFrom-Json)
             }
 
@@ -25,7 +25,7 @@ InModuleScope $ProjectName {
                 $return | Should -Be $true
             }
 
-            
+
         }
 
 
