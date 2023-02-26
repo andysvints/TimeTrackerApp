@@ -11,7 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Unit Tests
-- For new features.
+- New features.
+- Unit Tests for PSCore
 
 ### Changed
 
@@ -32,4 +33,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 
 - In case of vulnerabilities.
-

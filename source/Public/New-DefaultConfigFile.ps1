@@ -38,7 +38,7 @@ function New-DefaultConfigFile
                     "CircularLogging" = $true
                     "LoggingLevel"="None"
                     "TimeIncrementMins" = 30
-                    "OutputFolder"= $($env:USERPROFILE)
+                    "OutputFolder"= $home
                     "OutputFormat"= "CSV"
                     "Technician"= ""
                 }
