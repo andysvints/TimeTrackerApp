@@ -13,7 +13,7 @@ trigger:
     - "*-*"
 
 variables:
-  Agent.Source.Git.ShallowFetchDepth: 0
+  
   buildFolderName: output
   buildArtifactName: output
   testResultFolderName: testResults
@@ -29,7 +29,7 @@ stages:
         steps:
           - pwsh: |
               dotnet tool install --global GitVersion.Tool
-              $gitVersionObject = dotnet-gitversion | ConvertFrom-Json
+              dotnet-gitversion 
               $gitVersionObject.PSObject.Properties.ForEach{
                   Write-Host -Object "Setting Task Variable '$($_.Name)' with value '$($_.Value)'."
                   Write-Host -Object "##vso[task.setvariable variable=$($_.Name);]$($_.Value)"
