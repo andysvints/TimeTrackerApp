@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Unit Tests for PowerShell Core
 - Update Stop-TimeTracker function
 - Update Azure DevOps build pipeline
+- Trim publish pipeline
 
 ### Added
 
