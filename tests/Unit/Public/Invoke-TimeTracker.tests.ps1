@@ -10,7 +10,7 @@ InModuleScope $ProjectName {
     Describe Invoke-TimeTracker {
         Context "XAML Syntax check for WPF Windows"{
             BeforeEach{
-                Import-Module TimeTracker
+                Import-Module TimeTrackerApp
                 $ModuleRawCode=Get-Content -Path $(Get-Module TimeTracker).Path
                 $Count=0
                 $MainWindowStartLine=0
