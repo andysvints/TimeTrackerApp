@@ -11,7 +11,7 @@ InModuleScope $ProjectName {
         Context "XAML Syntax check for WPF Windows"{
             BeforeEach{
                 Import-Module TimeTrackerApp
-                $ModuleRawCode=Get-Content -Path $(Get-Module TimeTracker).Path
+                $ModuleRawCode=Get-Content -Path $(Get-Module TimeTrackerApp).Path
                 $Count=0
                 $MainWindowStartLine=0
                 $MainWindowEndLine=0
