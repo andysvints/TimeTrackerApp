@@ -18,7 +18,7 @@ function Invoke-TimeTracker {
             {
                 try {
                     if($IsWindows){
-                        $ModuleVersion=$(Get-Module TimeTracker | Select-Object -ExpandProperty Version).ToString()
+                        $ModuleVersion=$(Get-Module TimeTrackerApp | Select-Object -ExpandProperty Version).ToString()
                         Write-Verbose "Loading Windows Presentation Foundation"
                         [void][System.Reflection.Assembly]::LoadWithPartialName('presentationframework')
                         #region WPF Windows Design

@@ -5,7 +5,7 @@ function Stop-TimeTracker
       Stop TimeTracking instance
 
       .DESCRIPTION
-      This function is stopping TimeTracking intance based on Id.
+      This function is stopping TimeTracking instance based on Id.
 
       .EXAMPLE
       Stop-TimeTracker -Guid f73e4c31-1e32-4a83-935c-14ac4bd74302 -Verbose
@@ -18,7 +18,7 @@ function Stop-TimeTracker
         VERBOSE: TimeTracking stopped: f73e4c31-1e32-4a83-935c-14ac4bd74302
 
       .PARAMETER Guid
-      Id of the TimeTracking instance that need to be stopped.b
+      Id of the TimeTracking instance that need to be stopped.
     #>
         [CmdletBinding(SupportsShouldProcess=$true,
         ConfirmImpact='Medium')]
