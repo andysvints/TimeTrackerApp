@@ -7,3 +7,5 @@ Simple time tracking functionalities within PowerShell. Helps you to track spent
  ```powershell
  Install-Module -Name TimeTrackerApp -AllowPrerelease 
  ```
+
+ [Timer icons created by Freepik - Flaticon]("https://www.flaticon.com/free-icons/timer")
