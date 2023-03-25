@@ -183,4 +183,19 @@ Stop-TimeTracker [-Guid] <Object> [-WhatIf] [-Confirm] [<CommonParameters>]
       VERBOSE: TimeTracking stopped: f73e4c31-1e32-4a83-935c-14ac4bd74302
 ```
 
+### Invoke-TimeTracker
+
+    Invoke TimeTracker WPF UI.
+
+#### Syntax
+
+```powershell
+Invoke-TimeTracker [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+#### Example
+```powershell
+PS > Invoke-TimeTracker
+```
+
 **[Timer icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/timer)**
