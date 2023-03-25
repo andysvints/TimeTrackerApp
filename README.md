@@ -17,8 +17,7 @@ it:
  ```powershell
  Install-Module -Name TimeTrackerApp -AllowPrerelease 
  ```
-
-
+ 
 ## Usage
 
 Generic workflow is to create/adjust configuration file to suit your needs and 
