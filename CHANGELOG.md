@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update Azure DevOps build pipeline
 - Trim publish pipeline
 - Rename module
+- Added about_help
 
 ### Added
 

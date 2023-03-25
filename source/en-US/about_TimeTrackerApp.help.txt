@@ -1,0 +1,26 @@
+TOPIC
+    about_TimeTracker
+
+SHORT DESCRIPTION
+    Simple time tracking functionalities within PowerShell. Helps you to track spent time for different activities during your day to day work. Provides rudimentary WPF UI in Windows environment.
+
+LONG DESCRIPTION
+    Simple time tracking functionalities within PowerShell. Helps you to track spent time for different activities during your day to day work. Provides rudimentary WPF UI in Windows environment.
+    Allows to start and track multiple tasks at the same time. Rounding up time spent based on the provided increment.
+    Default increment is 30 minutes.
+    After you stop time tracking it provides you the Time Tracking report.
+    Can be used as CLI tool within Windows and Linux environments.
+    In Windows can be used as WPF UI box for more convenient time and activities tracking.
+
+
+NOTE:
+    Thank you to all those who contributed to this module, by writing code, sharing opinions, and provided feedback.
+
+TROUBLESHOOTING NOTE:
+    Look out on the Github repository for issues and new releases.
+
+SEE ALSO
+  - https://github.com/andysvints/TimeTrackerApp
+
+KEYWORDS
+      TimeTracker, TimeManagement
